@@ -316,6 +316,7 @@ body {
   margin-right: 0px;
 }
 .manager-card {
+    background-color: var(--white-color);
   padding-top: 30px;
   padding-bottom: 30px;
 }
