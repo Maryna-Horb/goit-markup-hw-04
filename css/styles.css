@@ -176,7 +176,6 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
@@ -217,7 +216,6 @@ body {
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
-  
 }
 .icon-about-us {
     display: inline;
@@ -301,9 +299,12 @@ body {
 .our-team-list {
     display: flex;
     flex-direction: row;
+    border-radius: 4px;
 }
 .our-team-item {
     margin-right: 30px;
+    border-radius: 4px;
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.2), 0px 1px rgba(0, 0, 0, 0.14), 0px 1px rgba(0, 0, 0, 0.12); 
 }
 .our-team-item:nth-child(4n) {
     margin-right: 0px;
@@ -327,18 +328,96 @@ body {
     font-size: 16px;
     line-height: 1.19;
     color: var(--light-grey-color);
+    margin-bottom: 16px;
 }
+.manager-social-list {
+    display: flex;
+    justify-content: center;
+}
+.master-social-item {
+    width: 44px;
+    height: 44px;
+}
+.master-social-item + .master-social-item {
+    margin-left: 10px;
+}
+.master-social-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+    color: #AFB1B8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.master-social-link:hover,
+.master-social-link:focus {
+    background-color: var(--light-blue-color);
+    color: var(--white-color);
+} 
+.master-social-icon {
+    fill: currentColor;
+}
+.container-regular-customers {
+    margin: 0 auto;
+}
+.regular-customers-title {
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--grey-color); 
+}
+.regular-customers-list {
+    display: flex;
+    align-items: center;
+}
+.regular-icon {
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.regulars-customers-item +.regulars-customers-item {
+    margin-left: 30px;
+}
+.icon-customers {
+    align-items: center;
+    justify-content: center;
+}
+
 .footer {
     padding-bottom: 60px;
     padding-top: 60px;
     background-color: var(--medium-light-grey-color);
 }
-.container-footer {
+.container-footer{
+    width: 1200px;
     display: flex;
-    flex-direction: column;
     margin: 0 auto;
 }
+.title {
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0 auto;
+    height: max-content;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
 .footer-link-logo {
+    display: flex;
     text-decoration: none;
     margin-bottom: 20px;
     font-family: Raleway;
@@ -350,9 +429,6 @@ body {
 }
 .footer-logo {
     color: var(--white-color);
-}
-.logo {
-    margin-bottom: 20px;
 }
 .contacts-footeer-item {
     margin-bottom: 9px;
@@ -369,6 +445,38 @@ body {
     font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
+}
+.footer-social-list {
+    display: flex;
+    flex: auto;
+    margin: 0 auto;
+    margin-left: -145px;
+    margin-top: 48px;
+}
+.footer-social-item {
+    width: 44px;
+    height: 44px;
+}
+.footer-social-item + .footer-social-item {
+    margin-left: 10px;
+}
+.footer-social-link {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(117,117,117,0.1);
+    color: var(--white-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--light-blue-color);
+    color: var(--white-color);
+} 
+.footer-social-icon {
+    fill: currentColor;
 }
 
 .container-works {
@@ -404,11 +512,13 @@ body {
     line-height: 1.62;
     letter-spacing: 0.03em;
     color: var(--grey-color);
+    border: 1px solid #F5F4FA;
 }
 .works-button:hover,
 .works-button:focus {
     background-color: var(--light-blue-color);
     color: white;
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.12), 0px 1px rgba(0, 0, 0, 0.08), 0px 3px rgba(0, 0, 0, 0.1);
 }
 .container-project {
     margin: 0 auto;
@@ -436,6 +546,10 @@ img {
 }
 .project-item:nth-last-child(-n+3) {
     margin-bottom: 0px;
+}
+.project-item:hover,
+.project-item:focus {
+   box-shadow: 1px 4px rgba(0, 0, 0, 0.16); 
 }
 .project-card {
     padding: 20px 24px;
